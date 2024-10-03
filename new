@@ -1,0 +1,39 @@
+// Import the express module, which helps create a web server
+const express = require('express');
+
+// Create an instance of an Express app for specific use of needs
+const app = express();
+
+// example route for user
+const userpage=require('./routes/user')
+
+const sample=require('./routes/sampleroute')
+
+app.use(sample)
+
+app.use(userpage)
+
+app.use((req,res,send)=>{
+  res.send('<h1>404 page not found</h1>')
+})
+
+
+
+// // Use a middleware function to log 'hello world' whenever a request is received
+// app.use((req,res,next)=>{  //using the use() function
+//     console.log('middleware1');
+//     next()
+    
+// });
+
+// app.use((req,res,next)=>{
+//     console.log('middleware2')
+//     next()
+// })
+// app.use((req,res,next)=>{
+//     console.log('middleware3')
+    
+// })
+
+// Make the server listen for requests on port 3000
+app.listen(3000);
