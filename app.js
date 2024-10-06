@@ -5,11 +5,11 @@ const express = require('express');
 const app = express();
 
 // example route for user
-const userpage=require('./routes/user')
+const userpage=require('./routes/shop')
 
-const sample=require('./routes/sampleroute')
+const product=require('./routes/product')
 
-app.use('/admin',sample)
+app.use(product)
 app.use(userpage)
 
 app.use((req,res,next)=>{
