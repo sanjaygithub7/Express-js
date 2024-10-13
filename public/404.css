@@ -1,0 +1,49 @@
+ /* General body styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the error message */
+.error-container {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff4c4c; /* Bright red color for the error message */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Back to homepage button styles */
+.back-home {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
